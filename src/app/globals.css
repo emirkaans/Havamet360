@@ -5,11 +5,21 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-primary: #030712;
+  --color-secondary: #090e1b;
+  --color-tertiary: #101828;
+  --color-quaternary: #1d293d;
+  --color-textGray: #99a1af;
+  --color-border: #1e2939;
+  --color-destructive: #eb2424;
+  --color-green: #05df72;
+  --color-purple: #7c86ff;
+  --font-sf-pro-display: "SF-Pro-Display", sans-serif;
+  --font-gilroy: "Gilroy", sans-serif;
+  --shadow-checkbox: 0px 0px 0px 1px #1d293d;
+  --shadow-custom: 0px 1px 3.6px 0px #0000000f;
+  --shadow-inner: inset 0px 0px 0px 1px #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
