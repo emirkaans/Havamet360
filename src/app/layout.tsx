@@ -16,8 +16,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        <main>{children}</main>
+        <div className="flex flex-col items-center w-full bg-white">
+          <div className="max-w-[1800px] w-full">
+            <Header />
+            <main className="min-h-screen flex flex-col justify-center overflow-hidden">
+              {children}
+            </main>
+          </div>
+        </div>
         <Footer />
       </body>
     </html>
