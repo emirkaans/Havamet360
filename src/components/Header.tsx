@@ -6,29 +6,31 @@ export const Header = () => {
     { href: "/workshop", label: "Workshop" },
     { href: "/symposium", label: "Symposium" },
     { href: "/program", label: "Program" },
-    { href: "/register", label: "Register" },
     { href: "/contact", label: "Contact" },
+    { href: "/register", label: "Register" },
   ];
 
   return (
-    <header className="sticky top-0 bg-white z-50 text-black">
-      <div className="flex items-center justify-between px-10">
-        <Link href="/">
-          <img
-            src="/assets/navbar_logo.png"
-            className="mx-4 my-2 h-14 lg:h-16"
-            alt="Logo"
-          />
-        </Link>
+    <div className="sticky top-0 left-0 z-50 h-20 text-white bg-transparent">
+      <header className="">
+        <div className="flex items-center justify-between px-10">
+          <Link href="/">
+            <img
+              src="/assets/itu-logo-white.png"
+              className="mx-4 my-2 h-14 lg:h-16"
+              alt="Logo"
+            />
+          </Link>
 
-        <div className="flex mx-8">
-          {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="m-4">
-              {link.label}
-            </Link>
-          ))}
+          <div className="flex mx-8">
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="m-4">
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
   );
 };

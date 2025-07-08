@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const QuoteSection = () => {
   return (
-    <section className="bg-neutral-900 text-white py-16 px-4 m-10">
+    <section className="bg-neutral-900 text-white py-16 px-4">
       <div className="max-w-2xl mx-auto text-center">
         {/* Quote */}
         <blockquote className="italic text-xl md:text-2xl leading-relaxed mb-8">

@@ -1,16 +1,15 @@
 import React from "react";
 import Link from "next/link";
-import CountdownTimer from "./CountdownTimer";
 
 export const Footer = () => {
   return (
-    <footer className="bg-blue-200 text-blue-950">
+    <footer className="bg-gradient-to-b from-neutral-900 to-neutral-800 text-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Hakkımızda */}
           <div>
             <img
-              src="/assets/navbar_logo.png"
+              src="/assets/itu-logo-white.png"
               className="mx-4 my-2 h-14 lg:h-16"
               alt=""
             />
@@ -88,7 +87,7 @@ export const Footer = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-950 hover:text-white"
+                className="text-gray-100 hover:text-white"
               >
                 <svg
                   className="w-6 h-6"
@@ -107,7 +106,7 @@ export const Footer = () => {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-950 hover:text-white"
+                className="text-gray-100 hover:text-white"
               >
                 <svg
                   className="w-6 h-6"
@@ -126,7 +125,7 @@ export const Footer = () => {
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-950 hover:text-white"
+                className="text-gray-100 hover:text-white"
               >
                 <svg
                   className="w-6 h-6"
@@ -146,22 +145,22 @@ export const Footer = () => {
         </div>
 
         {/* Alt Bilgi */}
-        <div className="border-t border-orange-900 mt-12 pt-8">
+        <div className="border-t border-gray-100 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-blue-950 text-sm">
+            <p className="text-gray-100 text-sm">
               © {new Date().getFullYear()} Aviation Meteorology 360°. All rights
               reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link
                 href="/gizlilik-politikasi"
-                className="text-blue-950 hover:text-white text-sm"
+                className="text-gray-100 hover:text-white text-sm"
               >
                 Privacy Policy
               </Link>
               <Link
                 href="/kullanim-kosullari"
-                className="text-blue-950 hover:text-white text-sm"
+                className="text-gray-100 hover:text-white text-sm"
               >
                 Terms of Use
               </Link>
