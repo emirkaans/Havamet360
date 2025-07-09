@@ -29,7 +29,7 @@ const InteractiveSessions = () => {
         </div>
         <div>
           <Image
-            src="/assets/interactivesession1.jpg"
+            src="/assets/images/interactivesession1.jpg"
             alt="Participant Guide"
             width={800}
             height={600}
@@ -40,7 +40,7 @@ const InteractiveSessions = () => {
         {/* Left: Image / Right: Text */}
         <div>
           <Image
-            src="/assets/interactivesession2.jpg"
+            src="/assets/images/interactivesession2.jpg"
             alt="Applied Training Modules"
             width={800}
             height={600}

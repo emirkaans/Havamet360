@@ -12,7 +12,7 @@ const QuoteSection = () => {
         {/* Author */}
         <div className="flex flex-col items-center">
           <Image
-            src="/assets/sabihagokcen.png"
+            src="/assets/images/sabihagokcen.png"
             alt="Sabiha Gökçen"
             width={100}
             height={100}

@@ -5,58 +5,53 @@ const Symposium = () => {
     {
       title: "1. Atmospheric Hazards and Flight Safety",
       subtopics: [
-        "Convective phenomena (thunderstorms, turbulence on separations, microbursts and windshear)",
+        "Convective phenomena (thunderstorms, multicells or supercells, microbursts and macrobursts)",
         "Turbulence (clear air turbulence, mountain waves, wind shear)",
         "Icing",
         "Volcanic ash clouds",
         "Sand and dust storms",
-        "Space weather phenomena",
-        "Fog and low clouds",
+        "Tropical cyclones (medicanes)",
+        "Hail showers",
         "Snow showers",
         "Freezing rain",
-        "Hail",
+        "Squalls",
         "Windstorms",
       ],
     },
     {
       title: "2. Meteorological Decision Support Systems and Technologies",
       subtopics: [
-        "Integrated and automation applications of METAR, SPECI, TAF, and AMDAR",
-        "AI applications",
-        "Airport meteorological observation systems",
-        "Remote weather observation technologies (LIDAR, SODAR)",
-        "Aviation weather forecast models",
-        "Visualization functions of existing and new products",
+        "Interpretation and automation applications of METAR, SPECI, TAF, TAF AMD, and SIGMET",
+        "Next-generation satellite and radar observation systems",
+        "Airport weather observation systems (AWOS, LIDAR, SODAR)",
+        "AI-assisted weather forecasting models",
+        "Real-time turbulence and icing alert products",
       ],
     },
     {
       title: "3. Unmanned Aerial Vehicle (UAV) Meteorology",
       subtopics: [
-        "General atmospheric planning and decision-making",
-        "Meteorological applications for UAV operations",
-        "Measurement and sensor technology for UAV operations",
+        "Vertical atmospheric profiling using drones",
+        "Meteorological applications with drones",
+        "Micro-scale analysis and forecasting for UAV operations",
       ],
     },
     {
       title: "4. Climate Change and Long-Term Aviation Planning",
       subtopics: [
-        "Climate impact by aviation",
-        "Impact of climate change on meteorological operations and airport infrastructure",
-        "Integration of climate change considerations into flight efficiency",
-        "Green initiatives through meteorological optimization for fuel efficiency",
+        "Changing jet stream patterns",
+        "Increasing frequency of severe weather events",
+        "Integration of climate change considerations into airport infrastructure",
+        "Green aviation initiatives with meteorological optimization for fuel efficiency",
       ],
     },
     {
       title: "5. Strategy",
-      subtopics: [
-        "Decision support systems",
-        "Data management systems",
-        "Crisis management",
-      ],
+      subtopics: ["Decision support systems", "Crisis management"],
     },
     {
       title: "6. Flight Schools and Dispatching",
-      subtopics: ["Good meteorology training", "New innovations in training"],
+      subtopics: ["050 Meteorology", "New techniques in training"],
     },
     {
       title: "7. Human Factor in Aviation Meteorology",
@@ -65,7 +60,7 @@ const Symposium = () => {
   ];
 
   return (
-    <section className="py-16 px-4 max-w-4xl mx-auto">
+    <section className="mt-20 py-16 px-4 max-w-4xl mx-auto">
       {/* Üst Başlık */}
       <h2 className="text-3xl md:text-4xl font-serif text-center mb-4 text-gray-900">
         Symposium
@@ -87,7 +82,7 @@ const Symposium = () => {
       {/* Görsel */}
       <div className="flex justify-center mb-8">
         <Image
-          src="/assets/symposium.jpg"
+          src="/assets/images/symposium.jpg"
           alt="Symposium"
           width={600}
           height={400}

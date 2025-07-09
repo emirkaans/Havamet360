@@ -9,7 +9,7 @@ export const Footer = () => {
           {/* Hakkımızda */}
           <div>
             <img
-              src="/assets/itu-logo-white.png"
+              src="/assets/images/itu-logo-white.png"
               className="mx-4 my-2 h-14 lg:h-16"
               alt=""
             />
@@ -35,7 +35,7 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/" className="m-4">
+                <Link href="/invited-speakers" className="m-4">
                   Invited Speakers
                 </Link>
               </li>

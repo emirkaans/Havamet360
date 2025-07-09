@@ -29,13 +29,13 @@ const NewPerspective: React.FC = () => {
   ];
 
   return (
-    <section className="text-gray-300 body-font">
+    <section className="text-gray-400 body-font max-w-[1200px] mx-auto shadow-sm">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2">
             One Atmosphere, Many Perspectives
           </h1>
-          <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+          <p className="lg:w-1/2 w-full leading-relaxed text-gray-600">
             This unique gathering will bring together academics, theoretical
             instructors, meteorological experts, weather forecasters, pilots,
             dispatchers, and all aviation enthusiasts.
@@ -45,7 +45,7 @@ const NewPerspective: React.FC = () => {
         <div className="flex flex-wrap -m-4">
           {aviationTopics.map((item, index) => {
             return (
-              <div key={index} className="xl:w-1/3 md:w-1/2 p-4">
+              <div key={index} className="xl:w-1/3 md:w-1/2 p-4 text-gray-800">
                 <div className="border border-gray-200 p-6 rounded-lg">
                   <h2 className="text-lg  font-medium title-font mb-2">
                     {item.title}

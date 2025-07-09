@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section className="py-4 px-4 mx-auto text-center">
+    <section className="container mt-20 py-4 px-4 mx-auto text-center">
       {/* Başlık */}
       <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-6">
         Contact
@@ -24,7 +24,7 @@ const Contact = () => {
       </p>
 
       {/* Harita */}
-      <div className="mb-6">
+      <div className="mb-6 max-w-1/2 mx-auto">
         <iframe
           src="https://www.openstreetmap.org/export/embed.html?bbox=29.0150%2C41.1020%2C29.0200%2C41.1050&layer=mapnik&marker=41.10380609969357%2C29.0175043944663&zoom=17"
           className="w-full h-80 rounded-md border"

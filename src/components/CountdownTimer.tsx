@@ -39,12 +39,12 @@ const CountdownTimer = () => {
   return (
     <div className=" text-center py-10 px-6 m-10 rounded-lg max-w-3xl mx-auto">
       {/* Başlık */}
-      <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-200">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-b from-neutral-900 to-neutral-800 p-4 rounded shadow">
         Flight | Forecasts | Future
       </h2>
 
       {/* Açıklama */}
-      <p className="mb-8 text-sm md:text-base max-w-2xl mx-auto text-gray-400">
+      <p className="mb-8 text-sm md:text-base max-w-2xl mx-auto text-gray-600">
         A unique workshop awaits to uncover the future of aviation meteorology.
         Don’t miss it.
       </p>

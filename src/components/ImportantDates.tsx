@@ -9,22 +9,22 @@ const ImportantDates = () => {
   ];
 
   return (
-    <section className="py-16 px-4 flex justify-center">
+    <section className="py-4 px-4 flex justify-center">
       <div className="p-8 max-w-3xl w-full rounded-md">
         {/* Başlık */}
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-gray-200">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-gray-600">
           📅 Important Dates & Information
         </h2>
 
         {/* Liste */}
-        <ul className="space-y-4 text-gray-300">
+        <ul className="space-y-4 text-gray-800">
           {dates.map((item, index) => {
             // Eğer metnin içinde ':' varsa ilk kısmı bold yapalım
             const [prefix, suffix] = item.split(":");
 
             return (
               <li key={index} className="flex items-start gap-2">
-                <span className="text-gray-200 mt-1">•</span>
+                <span className="mt-1">•</span>
                 <span>
                   {suffix ? (
                     <>

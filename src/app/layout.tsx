@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import { HeroMain } from "../components/HeroMain";
 
 export const metadata: Metadata = {
   title: "Havamet 360 | İTÜ",
@@ -16,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="antialiased">
         <div className="relative bg-white">
           <Header />
           <main className="-mt-20">{children}</main>

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const HeroMain = () => {
   const heroSlide = {
-    image: "/assets/hero-slider.png",
+    image: "/assets/images/hero-slider.png",
     title: "Aviation Meteorology 360°",
     subtitle: "Explore the skies together.", // Kısaltılmış metin
     link: "/register",
