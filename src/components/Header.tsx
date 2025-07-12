@@ -11,6 +11,8 @@ export const Header = () => {
   const navLinks = [
     { href: "/workshop", label: "Workshop" },
     { href: "/symposium", label: "Symposium" },
+    { href: "/panel", label: "Panel" },
+    { href: "/invited-speakers", label: "Invited Speakers" },
     { href: "/program", label: "Program" },
     { href: "/contact", label: "Contact" },
     { href: "/register", label: "Register" },

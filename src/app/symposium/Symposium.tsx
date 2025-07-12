@@ -1,3 +1,5 @@
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 
 const Symposium = () => {
@@ -59,19 +61,22 @@ const Symposium = () => {
     },
   ];
 
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleAccordion = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <section className="mt-20 py-16 px-4 max-w-4xl mx-auto">
-      {/* Üst Başlık */}
       <h2 className="text-3xl md:text-4xl font-serif text-center mb-4 text-gray-900">
         Symposium
       </h2>
 
-      {/* Alt Başlık */}
       <h3 className="text-lg md:text-xl font-bold text-blue-900 text-center mb-4">
         1st Aviation Meteorology 360° Symposium
       </h3>
 
-      {/* Açıklama */}
       <p className="text-gray-700 text-center max-w-2xl mx-auto mb-8">
         Taking place from 24 to 26 November 2025, the Aviation Meteorology 360°
         Symposium is organized alongside the Aviation Meteorology 360° Workshop
@@ -79,7 +84,6 @@ const Symposium = () => {
         on aviation weather, monitoring, and forecasting technologies.
       </p>
 
-      {/* Görsel */}
       <div className="flex justify-center mb-8">
         <Image
           src="/assets/images/symposium.jpg"
@@ -90,23 +94,32 @@ const Symposium = () => {
         />
       </div>
 
-      {/* Konular */}
       <div className="mt-6">
         <h4 className="font-bold text-gray-900 mb-4 uppercase tracking-wide">
           Symposium Main Topics
         </h4>
-        <ol className="space-y-6 list-decimal list-inside">
+
+        <div className="space-y-2">
           {mainTopics.map((topic, index) => (
-            <li key={index}>
-              <p className="font-semibold text-gray-800">{topic.title}</p>
-              <ul className="list-disc list-inside pl-4 text-gray-700 mt-2 space-y-1">
-                {topic.subtopics.map((sub, subIndex) => (
-                  <li key={subIndex}>{sub}</li>
-                ))}
-              </ul>
-            </li>
+            <div key={index} className="border-b m-8 border-gray-300 pb-2">
+              <button
+                onClick={() => toggleAccordion(index)}
+                className="w-full flex justify-between items-center text-left font-semibold text-gray-800 focus:outline-none"
+              >
+                <span>{topic.title}</span>
+                <span>{openIndex === index ? "▲" : "▼"}</span>
+              </button>
+
+              {openIndex === index && (
+                <ul className="list-disc list-inside pl-4 text-gray-700 mt-2 space-y-1">
+                  {topic.subtopics.map((sub, subIndex) => (
+                    <li key={subIndex}>{sub}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
           ))}
-        </ol>
+        </div>
       </div>
     </section>
   );

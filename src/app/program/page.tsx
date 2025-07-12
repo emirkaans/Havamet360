@@ -1,7 +1,5 @@
+import Program from "./Program";
+
 export default function Page() {
-  return (
-    <>
-      <div></div>
-    </>
-  );
+  return <Program />;
 }

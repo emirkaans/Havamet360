@@ -37,7 +37,7 @@ export const HeroMain = () => {
           </p>
           <Link
             href={heroSlide.link}
-            className="inline-block bg-red-900 hover:bg-red-950 text-white px-8 py-3 rounded text-lg font-semibold transition duration-300"
+            className="inline-block bg-red-900 hover:bg-red-700 text-white px-8 py-3 rounded text-lg font-semibold transition duration-300"
           >
             Register
           </Link>

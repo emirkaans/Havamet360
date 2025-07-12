@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section className="container mt-20 py-4 px-4 mx-auto text-center">
+    <section className="container mt-20 py-16 px-4 mx-auto text-center">
       {/* Başlık */}
       <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-6">
         Contact

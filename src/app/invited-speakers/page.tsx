@@ -1,7 +1,5 @@
+import InvitedSpeakers from "./InvitedSpeakers";
+
 export default function Page() {
-  return (
-    <>
-      <div></div>
-    </>
-  );
+  return <InvitedSpeakers />;
 }

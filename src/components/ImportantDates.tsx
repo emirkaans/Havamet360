@@ -12,8 +12,8 @@ const ImportantDates = () => {
     <section className="py-4 px-4 flex justify-center">
       <div className="p-8 max-w-3xl w-full rounded-md">
         {/* Başlık */}
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-gray-600">
-          📅 Important Dates & Information
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-600">
+          Important Dates & Information
         </h2>
 
         {/* Liste */}

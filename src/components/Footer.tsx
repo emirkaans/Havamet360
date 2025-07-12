@@ -1,85 +1,64 @@
 import React from "react";
 import Link from "next/link";
 
+const quickLinks = [
+  { href: "/workshop", label: "Workshop" },
+  { href: "/symposium", label: "Symposium" },
+  { href: "/", label: "Committees" },
+  { href: "/invited-speakers", label: "Invited Speakers" },
+  { href: "/program", label: "Program" },
+  { href: "/", label: "Abstract Submission" },
+  { href: "/", label: "Supporters" },
+];
+
+const categories = [
+  { href: "/members", label: "Members" },
+  { href: "/register", label: "Register" },
+  { href: "/contact", label: "Contact" },
+];
+
+const policies = [
+  { href: "/gizlilik-politikasi", label: "Privacy Policy" },
+  { href: "/kullanim-kosullari", label: "Terms of Use" },
+];
+
 export const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-neutral-900 to-neutral-800 text-gray-100">
+    <footer className="bg-gradient-to-b from-neutral-900 to-neutral-800 text-gray-100 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Hakkımızda */}
-          <div>
+          <Link href="/">
             <img
               src="/assets/images/itu-logo-white.png"
               className="mx-4 my-2 h-14 lg:h-16"
-              alt=""
+              alt="ITU Logo"
             />
-          </div>
+          </Link>
 
-          {/* Hızlı Linkler */}
           <div>
-            {/* <h3 className="text-lg font-semibold mb-4">Menü</h3> */}
             <ul className="space-y-2">
-              <li>
-                <Link href="/workshop" className="m-4">
-                  Workshop
-                </Link>
-              </li>
-              <li>
-                <Link href="/symposium" className="m-4">
-                  Symposium
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="m-4">
-                  Committees
-                </Link>
-              </li>
-              <li>
-                <Link href="/invited-speakers" className="m-4">
-                  Invited Speakers
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="m-4">
-                  Program
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="m-4">
-                  Abstract Submission
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="m-4">
-                  Supporters
-                </Link>
-              </li>
+              {quickLinks.map((link, index) => (
+                <li key={index}>
+                  <Link href={link.href} className="m-4">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Kategoriler */}
           <div>
-            {/* <h3 className="text-lg font-semibold mb-4">Kategoriler</h3> */}
             <ul className="space-y-2">
-              <li>
-                <Link href="/members" className="m-4">
-                  Members
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="m-4">
-                  Register
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="m-4">
-                  Contact
-                </Link>
-              </li>
+              {categories.map((link, index) => (
+                <li key={index}>
+                  <Link href={link.href} className="m-4">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Sosyal Medya */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
@@ -144,7 +123,6 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Alt Bilgi */}
         <div className="border-t border-gray-100 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-100 text-sm">
@@ -152,18 +130,15 @@ export const Footer = () => {
               reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link
-                href="/gizlilik-politikasi"
-                className="text-gray-100 hover:text-white text-sm"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                href="/kullanim-kosullari"
-                className="text-gray-100 hover:text-white text-sm"
-              >
-                Terms of Use
-              </Link>
+              {policies.map((link, index) => (
+                <Link
+                  key={index}
+                  href={link.href}
+                  className="text-gray-100 hover:text-white text-sm"
+                >
+                  {link.label}
+                </Link>
+              ))}
             </div>
           </div>
         </div>

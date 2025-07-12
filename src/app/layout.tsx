@@ -15,8 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        <div className="relative bg-white">
+      <body className="antialiased min-h-screen flex-col flex">
+        <div className="relative bg-white flex-1">
           <Header />
           <main className="-mt-20">{children}</main>
         </div>
