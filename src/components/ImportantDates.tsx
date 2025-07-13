@@ -11,15 +11,12 @@ const ImportantDates = () => {
   return (
     <section className="py-4 px-4 flex justify-center">
       <div className="p-8 max-w-3xl w-full rounded-md">
-        {/* Başlık */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-600">
           Important Dates & Information
         </h2>
 
-        {/* Liste */}
         <ul className="space-y-4 text-gray-800">
           {dates.map((item, index) => {
-            // Eğer metnin içinde ':' varsa ilk kısmı bold yapalım
             const [prefix, suffix] = item.split(":");
 
             return (

@@ -18,8 +18,6 @@ const Register = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form Data:", formData);
-    // Buraya API call veya başka işlem eklenebilir
   };
 
   return (
@@ -28,11 +26,16 @@ const Register = () => {
         Register
       </h2>
 
+      <p className="text-gray-600 max-w-[800px] text-center">
+        Note: Participation in the workshop & symposium is free of charge, and
+        it is not mandatory to prepare a presentation in order to attend as a
+        listener.
+      </p>
+
       <form
         onSubmit={handleSubmit}
         className="w-full max-w-lg bg-white rounded-xl shadow-lg p-8 space-y-6"
       >
-        {/* Name */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Name <span className="text-red-500">*</span>
@@ -59,7 +62,6 @@ const Register = () => {
           </div>
         </div>
 
-        {/* Institution */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Institution or Department
@@ -74,7 +76,6 @@ const Register = () => {
           />
         </div>
 
-        {/* Email */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Email <span className="text-red-500">*</span>
@@ -90,7 +91,6 @@ const Register = () => {
           />
         </div>
 
-        {/* Phone */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Phone Number
@@ -105,7 +105,6 @@ const Register = () => {
           />
         </div>
 
-        {/* Submit Button */}
         <button
           type="submit"
           className="w-full bg-gradient-to-r from-gray-800 to-gray-600 text-white rounded-lg py-2 font-semibold hover:from-gray-950 hover:to-gray-700 transition duration-300 shadow-md cursor-pointer"

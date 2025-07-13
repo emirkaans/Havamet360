@@ -7,13 +7,12 @@ export const HeroMain = () => {
   const heroSlide = {
     image: "/assets/images/hero-slider.png",
     title: "Aviation Meteorology 360°",
-    subtitle: "Explore the skies together.", // Kısaltılmış metin
+    subtitle: "Explore the skies together.",
     link: "/register",
   };
 
   return (
     <section className="relative w-full h-screen">
-      {/* Hero image */}
       <div className="absolute inset-0">
         <Image
           src={heroSlide.image}
@@ -22,11 +21,10 @@ export const HeroMain = () => {
           className="object-cover"
           priority
         />
-        {/* Hafif karartma efekti */}
+
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
 
-      {/* Hero content */}
       <div className="relative z-10 flex flex-col justify-center h-full mx-8 px-6">
         <div className="max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white leading-tight">

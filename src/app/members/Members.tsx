@@ -21,13 +21,10 @@ const members = [
 const Members = () => {
   return (
     <section className="mt-20 py-16 px-4 max-w-6xl mx-auto text-center">
-      {/* Başlık */}
-
       <h2 className="text-3xl md:text-4xl font-serif mb-4 text-gray-900">
         ITU Committee Members
       </h2>
 
-      {/* Ana Görsel */}
       <div className="flex justify-center mb-8">
         <Image
           src="/assets/images/members-main.jpg"
@@ -38,12 +35,11 @@ const Members = () => {
         />
       </div>
 
-      {/* Üyeler */}
       <div className="flex flex-wrap justify-center gap-6">
         {members.map((member, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md p-4 w-40"
+            className="flex flex-col bg-white border border-gray-200 rounded-lg shadow-md p-4 w-40  items-center"
           >
             <Image
               src={`/assets/images/members-${index + 1}.jpg`}
